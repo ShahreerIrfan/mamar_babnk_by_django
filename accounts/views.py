@@ -33,7 +33,7 @@ class UserLogoutView(LogoutView):
     
 
 class UserBankAccountUpdateView(View):
-    template_name = 'accounts/profile.html'
+    template_name = 'profile.html'
 
     def get(self, request):
         form = UserUpdateForm(instance=request.user)
